@@ -14,3 +14,11 @@ m4
 libx11-dev
 xorg
 twm [as system window manager]
+
+Edit mgr/Configfile and replace USERNAME with your home path.
+Then from within /mgr/
+make first
+make depend
+make install
+
+startx and run /mgr/bin/./mgr
