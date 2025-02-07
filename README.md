@@ -24,4 +24,4 @@ Then from within /mgr/
 
 startx to get into the your desktop window manager (you might need to create an .xinitrc in your $HOME with the line "exec twm") and then run /mgr/bin/./mgr from a terminal.
 
-MGR then runs in an X window.
+MGR then runs in an X window. Press any key at the splash screen to go to the desktop. Click and hold for the menu, select 'new window' and then draw the size. Execute other binaries from the terminal, which take over the terminal.
