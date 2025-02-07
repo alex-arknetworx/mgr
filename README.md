@@ -22,6 +22,6 @@ Then from within /mgr/
 "make depend",
 "make install".
 
-startx to get into the your desktop window manager (you might need to create an .xinitrc in your $HOME with the line "exec twm") and then run /mgr/bin/./mgr from a terminal
+startx to get into the your desktop window manager (you might need to create an .xinitrc in your $HOME with the line "exec twm") and then run /mgr/bin/./mgr from a terminal.
 
 MGR then runs in an X window.
