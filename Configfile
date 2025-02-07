@@ -1,0 +1,60 @@
+VERSION=	0.69
+
+INCLUDEDIR=	/home/USERNAME/mgr/include
+BINDIR=	/home/USERNAME/mgr/bin$(ARCHITECTURE)
+SHBINDIR=	/home/USERNAME/mgr/bin
+FONTDIR=	/home/USERNAME/mgr/font
+HFONTDIR=	/home/USERNAME/mgr/hfont
+ICONDIR=	/home/USERNAME/mgr/icon
+SERVERICONDIR=	/home/USERNAME/mgr/icon/server
+LIBDIR=	/home/USERNAME/mgr/lib$(ARCHITECTURE)
+MANDIR=	/home/USERNAME/mgr/man
+XBDDIR=	/home/USERNAME/mgr/mgrbd
+EXTRALIBS=	-lX11
+CRYPTLIB=	-lcrypt
+
+DEFAULT_FONT=	$(FONTDIR)/is8859-1-8x14
+EXAMPLES=	
+
+
+
+MS=		-ms
+
+
+FONT_DPI_DEF=   -DFONT_DPI=300
+ZILCH=		>
+RMF=		rm -f
+DEPFILE=	.depend
+
+LEX=		flex
+CC=		gcc
+CCFLAGS=	-Wall -O2
+CPPFLAGS=	-I$(INCLUDEDIR) 
+MKDEP=		gcc -MM -w
+MKDEPOUT=	$(DEPFILE)
+AWK=		awk
+ROFF=		groff
+ROFFDEVICE=	-Tascii
+ROFFONLY=	-Z
+TBL=		tbl
+LNS=		ln -s
+MKDIR=         install -d
+
+MOUSE_DEV=	/dev/input/mouse
+MGRFLAGS=	-DWHO -DVI -DKILL -DMGR_ALIGN -DMOUSE=5 -DTERMNAME=\"mgr-linux\" -DUSE_X11
+BITBLIT=	x11
+SYSTEM=	linux
+BLITLIBFLAGS=	-DUSE_X11
+
+SERVER=		mgr
+SERVER_PERM=	4755
+BITBLIT_PERM=	4755
+
+
+SCREEN=		mgrx11
+SCREEN_DEV=	:0
+
+
+
+
+
