@@ -46,7 +46,7 @@ icon_server.c:	../tools/bitmaptoc
 version.h:
 		echo "/* compilation info for mgr, file is created by make(1) */" > version.h
 		echo >> version.h
-		echo "char version[]=\"MGR version $(VERSION) compiled by `whoami` at `date`.\\nSystem: `uname -a`\\n\";" >> version.h
+		echo "char version[]=\"MGR version 0.69\";" >> version.h
 
 mgrlogin:	mgrlogin.o mgrlogin_fnt.o set_mode.o
 		$(CC) $(LDFLAGS) -o $@ mgrlogin.o mgrlogin_fnt.o set_mode.o $(LIBDIR)/libbitblit.a $(EXTRALIBS) $(CRYPTLIB)
