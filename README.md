@@ -12,8 +12,8 @@ APT packages installed prior to build:
 "git"
 "m4"
 "libx11-dev"
-"xorg"
-"twm" (as debian system window manager)
+"xorg" (if you dont already have an X or Wayland with XWayland desktop running)
+"twm" (if you dont already have a desktop running)
 
 Edit Configfile and replace USERNAME with your home path.
 
@@ -22,6 +22,6 @@ Then from within /mgr/
 "make depend",
 "make install".
 
-startx to get into the debian system window manager and run /mgr/bin/./mgr
+startx to get into the your desktop window manager (you might need to create an .xinitrc in your $HOME with the line "exec twm") and then run /mgr/bin/./mgr from a terminal
 
 MGR then runs in an X window.
