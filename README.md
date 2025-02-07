@@ -24,4 +24,4 @@ Then from within /mgr/
 
 startx to get into the debian system window manager and run /mgr/bin/./mgr
 
-MGR runs in an X window.
+MGR then runs in an X window.
